@@ -487,7 +487,7 @@ if __name__ == '__main__':
             selected_movie_vec = tfidf.transform([selected_features])
             
             # 뷰 1: 부산/부천 (Total List)에서 추천
-            st.subheader("🌟 2025 BIFF/BIFAN에서는 이 영화와 비슷해요")
+            st.subheader("🌟 2025 BIFF에서는 이 영화와 비슷해요")
             total_sim_scores = cosine_similarity(selected_movie_vec, total_tfidf_matrix)
 
             total_recommendations = get_recommendations(
